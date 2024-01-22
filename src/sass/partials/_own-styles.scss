@@ -29,6 +29,38 @@
   }
 }
 
+.check::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-image: url('../images/our-company/check.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/our-company/check@2x.png');
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/our-company/check@3x.png');
+  }
+}
+
+.question-gradient {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  max-width: 260px;
+  margin-bottom: 26px;
+  background: linear-gradient(91deg, #6071d9 36.51%, #aa676f 63.73%, #ccb41a 97.49%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mySwiper {
   min-width: 1136px;
   min-height: 566px;
