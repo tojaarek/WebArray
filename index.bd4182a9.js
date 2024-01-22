@@ -1,0 +1,2 @@
+const e=document.querySelector("#offices"),t=document.querySelector("#customers"),o=document.querySelector("#workers"),c=document.querySelector("#projects");let s=!1;const r=(e,t,o)=>{let c=1;const s=async()=>{switch(e.id){case"offices":case"workers":default:e.textContent=`${c}`;break;case"customers":e.textContent=`${c}K`;break;case"projects":e.textContent=`${c}+`}c++,c<=t&&setTimeout(s,o)};s()};window.addEventListener("scroll",(()=>{window.scrollY>=550&&!s&&(r(e,100,10),r(t,3,500),r(o,10,150),r(c,100,10),s=!0)}));
+//# sourceMappingURL=index.bd4182a9.js.map
