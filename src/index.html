@@ -29,6 +29,7 @@
     <include src="./partials/worry-free.html"></include>
     <include src="./partials/outside-the-box.html"></include>
     <include src="./partials/keeping-you-covered.html"></include>
+    <include src="./partials/visually-impressive.html"></include>
 
     <script src="./index.js" type="module"></script>
     <script src="./js/header.js" type="module"></script>
@@ -42,6 +43,23 @@
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
+        },
+        loop: true,
+      });
+
+      const bigSwiper = new Swiper('.bigSwiper', {
+        slidesPerView: 4,
+        sliderPerGroup: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        allowTouchMove: false,
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         loop: true,
       });

@@ -24,9 +24,52 @@
   padding: 26px 0 !important;
 }
 
-.swiper-slide {
+.mySwiper-slide {
   width: 370px !important;
   height: 514px !important;
+}
+
+.swiper-button-prev {
+  position: static !important;
+  width: 48px !important;
+  height: 48px !important;
+  margin: 0 !important;
+  border-radius: 50%;
+  background-color: rgba(235, 235, 235, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: '' !important;
+  }
+
+  & svg {
+    transform: rotate(90deg);
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.swiper-button-next {
+  position: static !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50%;
+  background-color: rgba(235, 235, 235, 0.5);
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: '' !important;
+  }
+
+  & svg {
+    transform: rotate(-90deg);
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .shape-one {
@@ -105,6 +148,81 @@
   background-image: url('../images/shapes/shape-five.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.squiggle-small {
+  position: absolute;
+  bottom: 80px;
+  left: 155px;
+  width: 94px;
+  height: 138px;
+  background-image: url('../images/shapes/small-squiggle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.squiggle-large {
+  position: absolute;
+  top: -90px;
+  right: -65px;
+  width: 146px;
+  height: 214px;
+  background-image: url('../images/shapes/large-squiggle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.exclamation {
+  position: absolute;
+  top: 100px;
+  right: 200px;
+  width: 90px;
+  height: 123px;
+  background-image: url('../images/keeping-you-covered/exclamation.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/keeping-you-covered/exclamation@2x.png');
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/keeping-you-covered/exclamation@3x.png');
+  }
+}
+
+.floating-monster {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 45px;
+  height: 45px;
+  background-image: url('../images/keeping-you-covered/floating-monster.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: floatAround 20s infinite cubic-bezier(0.42, 0, 0.58, 1);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/keeping-you-covered/floating-monster@2x.png');
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/keeping-you-covered/floating-monster@3x.png');
+  }
+}
+
+.floating-circle {
+  position: absolute;
+  bottom: 120px;
+  right: 100px;
+  width: 27px;
+  height: 27px;
+  background-image: url('../images/keeping-you-covered/floating-circle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: floatAround 20s infinite ease-in-out;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/keeping-you-covered/floating-circle@2x.png');
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/keeping-you-covered/floating-circle@3x.png');
+  }
 }
 
 .offices {
@@ -198,5 +316,26 @@
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
     background-image: url('../images/hero/ball-big@3x.png');
+  }
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-500px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translate(60px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translate(60px) rotate(-360deg);
   }
 }
