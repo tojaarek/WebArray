@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HellEN | Complex preparation for English UPE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/trusted.html"></include>
+    <include src="./partials/sm-management.html"></include>
+    <include src="./partials/our-expertise.html"></include>
+    <include src="./partials/worry-free.html"></include>
+
+    <script src="./index.js" type="module"></script>
+    <script src="./js/header.js" type="module"></script>
+    <script src="./js/counters.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+* {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 15px !important;
+  width: 100% !important;
+  max-width: 1230px !important;
+  min-width: 1230px !important;
+}
