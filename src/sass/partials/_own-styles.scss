@@ -8,11 +8,7 @@
 }
 
 .trusted {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(41, 47, 62, 1) 50%
-  );
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 50%, rgba(41, 47, 62, 1) 50%);
 
   &--shadow {
     overflow: hidden;
@@ -35,75 +31,119 @@
 
 .shape-one {
   position: absolute;
-  top: 60px;
-  left: 20px;
+  top: -40px;
+  left: -90px;
   width: 68px;
   height: 73px;
-  background-image: url("../images/shapes/shape-one.png");
+  background-image: url('../images/shapes/shape-one.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .shape-two {
   position: absolute;
-  bottom: 70px;
-  left: 330px;
+  bottom: -50px;
+  left: 230px;
   width: 109px;
   height: 80px;
-  background-image: url("../images/shapes/shape-two.png");
+  background-image: url('../images/shapes/shape-two.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shape-three {
+  position: absolute;
+  top: -50px;
+  right: 225px;
+  width: 67px;
+  height: 78px;
+  background-image: url('../images/shapes/shape-three.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shape-four {
+  position: absolute;
+  bottom: 20px;
+  right: 123px;
+  width: 89px;
+  height: 79px;
+  background-image: url('../images/shapes/shape-four.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/shapes/shape-four@2x.png');
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/shapes/shape-four@3x.png');
+  }
+
+  &--outside-the-box {
+    position: absolute;
+    width: 89px;
+    height: 79px;
+    bottom: 0;
+    left: 340px;
+    background-image: url('../images/shapes/shape-four.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/shapes/shape-four@2x.png');
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+      background-image: url('../images/shapes/shape-four@3x.png');
+    }
+  }
+}
+
+.shape-five {
+  position: absolute;
+  top: -40px;
+  right: 471px;
+  width: 68px;
+  height: 64px;
+  background-image: url('../images/shapes/shape-five.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .offices {
-  background-image: url("../images/counters/counter-office.png");
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/counters/counter-office@2x.png");
+  background-image: url('../images/counters/counter-office.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/counters/counter-office@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/counters/counter-office@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/counters/counter-office@3x.png');
   }
 }
 
 .customers {
-  background-image: url("../images/counters/counter-customers.png");
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/counters/counter-customers@2x.png");
+  background-image: url('../images/counters/counter-customers.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/counters/counter-customers@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/counters/counter-customers@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/counters/counter-customers@3x.png');
   }
 }
 
 .workers {
-  background-image: url("../images/counters/counter-workers.png");
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/counters/counter-workers@2x.png");
+  background-image: url('../images/counters/counter-workers.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/counters/counter-workers@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/counters/counter-workers@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/counters/counter-workers@3x.png');
   }
 }
 
 .projects {
-  background-image: url("../images/counters/counter-projects.png");
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/counters/counter-projects@2x.png");
+  background-image: url('../images/counters/counter-projects.png');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/counters/counter-projects@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/counters/counter-projects@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/counters/counter-projects@3x.png');
   }
 }
 
@@ -115,17 +155,13 @@
   position: absolute;
   left: 28.8px;
   top: 85.58px;
-  background-image: url("../images/hero/ball-small.png");
+  background-image: url('../images/hero/ball-small.png');
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/hero/ball-small@2x.png");
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero/ball-small@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/hero/ball-small@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/hero/ball-small@3x.png');
   }
 }
 
@@ -137,17 +173,13 @@
   position: absolute;
   left: 234.72px;
   top: 108.91px;
-  background-image: url("../images/hero/ball-medium.png");
+  background-image: url('../images/hero/ball-medium.png');
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/hero/ball-medium@2x.png");
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero/ball-medium@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/hero/ball-medium@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/hero/ball-medium@3x.png');
   }
 }
 
@@ -159,16 +191,12 @@
   position: absolute;
   left: 28.8px;
   bottom: 213.94px;
-  background-image: url("../images/hero/ball-big.png");
+  background-image: url('../images/hero/ball-big.png');
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url("../images/hero/ball-big@2x.png");
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/hero/ball-big@2x.png');
   }
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 268dpi),
-    (min-resolution: 3dppx) {
-    background-image: url("../images/hero/ball-big@3x.png");
+  @media (min-device-pixel-ratio: 3), (min-resolution: 268dpi), (min-resolution: 3dppx) {
+    background-image: url('../images/hero/ball-big@3x.png');
   }
 }
